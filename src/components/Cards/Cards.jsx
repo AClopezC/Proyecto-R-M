@@ -13,4 +13,3 @@ export default function Cards(props) {
   );
 }
 
-// haciendo pruebas con git hub
