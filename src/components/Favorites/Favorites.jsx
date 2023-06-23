@@ -20,8 +20,8 @@ const Favorites = ({ myFavorites }) => {
    return (
      <div>
        <select onChange={handleOrder}>
-         <option value="A">ASCENDENTE</option>
-         <option value="D">DESCENDENTE</option>
+         <option value="A">Ascendente</option>
+         <option value="D">Descendente</option>
        </select>
        <select onChange={handleFilter}>
          <option value="Male">Male</option>
@@ -30,7 +30,7 @@ const Favorites = ({ myFavorites }) => {
          <option value="unknown">Unknown</option>
          <option value="allcharacters">All characters</option>
        </select>
-       {myFavorites?.map((fav) => {
+       {myFavorites?.map(fav => {
          return <Card key={fav.id} character={fav} />;
        })}
      </div>

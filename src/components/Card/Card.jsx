@@ -13,14 +13,14 @@ function Card(props) {
 
    const handleFavorite = () => {
       if (isFav) {
-        setIsFav(false);
-        removeFav(character.id);
+         setIsFav(false);
+         removeFav(character.id);
       }
       else {
          setIsFav(true);
          addFav(character)
       }
-   }
+   };
 
    useEffect(() => {
      myFavorites.forEach((fav) => {
@@ -29,6 +29,8 @@ function Card(props) {
        }
      });
    }, [myFavorites, character]);
+
+   
    
    return (
      <div className={style.container}>
